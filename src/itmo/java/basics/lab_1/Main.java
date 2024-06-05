@@ -4,28 +4,28 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        exercise_1();
+        exercise1();
         System.out.println();
-        exercise_2();
+        exercise2();
         System.out.println();
-        exercise_3();
+        exercise3();
         System.out.println();
-        exercise_4();
+        exercise4();
         System.out.println();
-        exercise_5();
+        exercise5();
         System.out.println();
-        exercise_6();
+        exercise6();
 
     }
 
-    public static void exercise_1() {
+    public static void exercise1() {
         System.out.println("Я");
         System.out.println("хорошо");
         System.out.println("знаю");
         System.out.println("Java.");
     }
 
-    public static void exercise_2() {
+    public static void exercise2() {
         double a = (46 + 10) * ((double) 10 / 3);
         int b = 29 * 4 * -15;
 
@@ -33,14 +33,14 @@ public class Main {
         System.out.println(b);
     }
 
-    public static void exercise_3() {
-        int number = 10500;
-        int result = number / 10 / 10;
+    public static void exercise3() {
+        int number = 3;
+        double result = (double)number / 10 / 10;
 
         System.out.println(result);
     }
 
-    public static void exercise_4() {
+    public static void exercise4() {
         double x = 3.6;
         double y = 4.1;
         double z = 5.9;
@@ -49,7 +49,7 @@ public class Main {
         System.out.println(result);
     }
 
-    public static void exercise_5() {
+    public static void exercise5() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("x = ");
@@ -62,7 +62,7 @@ public class Main {
         System.out.printf("x = %d, y = %d, z = %d\n", x, y, z);
     }
 
-    public static void exercise_6() {
+    public static void exercise6() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("b = ");
