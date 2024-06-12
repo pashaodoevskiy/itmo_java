@@ -19,7 +19,7 @@ public class Main {
         isArraySortAsc(new int[]{1, 2, 3, 4, 5});
         isArraySortAsc(new int[]{6, 2, 3, 4, 5});
         fillArray();
-        swapFirstAndLastEement(new int[]{6, 2, 3, 4, 5});
+        swapFirstAndLastElement(new int[]{6, 2, 3, 4, 5});
         findFirstUniqueNumber(new int[]{1, 2, 3, 6, 7, 1});
     }
 
@@ -120,7 +120,7 @@ public class Main {
         System.out.println("Result: " + Arrays.toString(array));
     }
 
-    private static void swapFirstAndLastEement(int[] array1) {
+    private static void swapFirstAndLastElement(int[] array1) {
         int[] array2 = array1.clone();
         array2[0] = array1[array1.length - 1];
         array2[array1.length - 1] = array1[0];
