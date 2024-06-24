@@ -14,4 +14,20 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        return obj instanceof User && ((User) obj).name.equals(this.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 31;
+
+        return hash * 31 + name.hashCode();
+    }
 }
