@@ -14,5 +14,13 @@ public class MyCounterThread extends Thread {
                 counter.increment();
             }
         }
+        System.out.println("Счетчик: " + counter.getCount());
+    }
+
+    public void createIncrementThreads(int count) {
+        for (int i = 0; i < count; i++) {
+            java.lang.Thread myCallable = new MyCounterThread(counter);
+            myCallable.start();
+        }
     }
 }

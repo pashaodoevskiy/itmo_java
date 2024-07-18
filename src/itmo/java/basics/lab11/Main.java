@@ -2,12 +2,16 @@ package itmo.java.basics.lab11;
 
 import java.util.concurrent.*;
 
+
 public class Main {
+
     public static void main(String[] args) {
-        createCounterThreads(10);
-        printThreadStates();
-        createIncrementThreads(100);
-        printThreadNames();
+//        createCounterThreads(10);
+//        printThreadStates();
+        Counter counter = new Counter();
+        MyCounterThread myCounterThread = new MyCounterThread(counter);
+        myCounterThread.createIncrementThreads(100);
+//        printThreadNames();
     }
 
     public static void createCounterThreads(int count) {
@@ -56,16 +60,7 @@ public class Main {
         System.out.println("Текущее состояние потока: " + thread.getState());
     }
 
-    public static void createIncrementThreads(int count) {
-        Counter counter = new Counter();
 
-        for (int i = 0; i <= count; i++) {
-            java.lang.Thread myCallable = new MyCounterThread(counter);
-            myCallable.start();
-        }
-
-        System.out.println("Счетчик: " + counter.getCount());
-    }
 
     public static void printThreadNames() {
         Object lock = new Object();
