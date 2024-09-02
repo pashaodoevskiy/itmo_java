@@ -8,6 +8,7 @@ public class Counter {
         count = count + 1;
     }
 
+
     public int getCount() {
         return count;
     }
